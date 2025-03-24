@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 3614 500"
+   version="1.1"
+   id="svg9"
+   sodipodi:docname="thirdWave.svg"
+   width="3614"
+   height="500"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview9"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.41259681"
+     inkscape:cx="1423.9083"
+     inkscape:cy="419.29554"
+     inkscape:window-width="2558"
+     inkscape:window-height="1360"
+     inkscape:window-x="-7"
+     inkscape:window-y="378"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg9" />
+  <defs
+     id="defs6">
+    <linearGradient
+       id="1">
+      <stop
+         offset="35%"
+         stop-color="rgba(198,224,228,1)"
+         id="stop1" />
+      <stop
+         offset="85%"
+         stop-color="rgba(139,210,206,1)"
+         id="stop2" />
+      <stop
+         offset="100%"
+         stop-color="rgba(124,192,205,1)"
+         id="stop3" />
+    </linearGradient>
+    <linearGradient
+       id="2">
+      <stop
+         offset="5%"
+         stop-color="rgba(124,192,205,1)"
+         id="stop4" />
+      <stop
+         offset="50%"
+         stop-color="rgba(139,210,206,1)"
+         id="stop5" />
+      <stop
+         offset="100%"
+         stop-color="rgba(198,224,228,1)"
+         id="stop6" />
+    </linearGradient>
+  </defs>
+  <path
+     fill="#ccebff"
+     d="m 0,300 c 228.5,0 228.5,140 457,140 V 440 0 H 0 Z"
+     stroke-width="0"
+     id="path6" />
+  <path
+     fill="#ccebff"
+     d="M 456,440 C 697,440 697,277 938,277 V 277 0 H 456 Z"
+     stroke-width="0"
+     id="path7" />
+  <path
+     fill="#ccebff"
+     d="m 937,277 c 224,0 224,146 448,146 V 423 0 H 937 Z"
+     stroke-width="0"
+     id="path8" />
+  <path
+     fill="#ccebff"
+     d="m 1384,423 c 211.5,0 211.5,-123 423,-123 V 300 0 h -423 z"
+     stroke-width="0"
+     id="path9" />
+  <path
+     fill="#ccebff"
+     d="m 1807,300 c 228.5,0 228.5,140 457,140 V 440 0 h -457 z"
+     stroke-width="0"
+     id="path6-4" />
+  <path
+     fill="#ccebff"
+     d="m 2263,440 c 241,0 241,-163 482,-163 V 277 0 h -482 z"
+     stroke-width="0"
+     id="path7-5" />
+  <path
+     fill="#ccebff"
+     d="m 2744,277 c 224,0 224,146 448,146 V 423 0 h -448 z"
+     stroke-width="0"
+     id="path8-5" />
+  <path
+     fill="#ccebff"
+     d="m 3191,423 c 211.5,0 211.5,-123 423,-123 V 300 0 h -423 z"
+     stroke-width="0"
+     id="path9-1" />
+</svg>

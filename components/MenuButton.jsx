@@ -31,10 +31,10 @@ const menuVariant = {
 		},
 	},
 	exit: {
-		y: '100%',
+		x: '100%',
 		transition: {
 			delay: 0.7,
-			duration: 0.7,
+			duration: 0.2,
 		},
 	},
 };

@@ -59,22 +59,22 @@ export default function Template({ children }) {
 					<MotionCloud1
 						key='cloud1'
 						className='absolute top-0 left-0 w-full h-auto z-50 opacity-90 pointer-events-none'
-						{...cloudAnim(0)}
+						{...cloudAnim(0.3)}
 					/>
 					<MotionCloud2
 						key='cloud2'
 						className='absolute top-10 left-0 w-full h-auto z-50 opacity-90 pointer-events-none'
-						{...cloudAnim(0.2)}
+						{...cloudAnim(0.5)}
 					/>
 					<MotionCloud3
 						key='cloud3'
 						className='absolute bottom-10 left-0 w-full h-auto z-50 opacity-90 pointer-events-none'
-						{...cloudAnim(0.4)}
+						{...cloudAnim(0.7)}
 					/>
 					<MotionCloud4
 						key='cloud4'
 						className='absolute bottom-0 left-0 w-full h-auto z-50 opacity-90 pointer-events-none'
-						{...cloudAnim(0.6)}
+						{...cloudAnim(0.9)}
 					/>
 					<motion.div
 						initial='hidden'

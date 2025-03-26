@@ -3,6 +3,7 @@
 import { Button } from '@/components/ui/button';
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'motion/react';
+
 import Link from 'next/link';
 import useWindowSize from './hooks/useWindowSize';
 import Nav from './Nav';
@@ -23,7 +24,7 @@ const menuVariant = {
 	show: {
 		y: 0,
 		transition: {
-			duration: 1,
+			duration: 1.4,
 			type: 'spring',
 			bounce: 0,
 			delayChildren: 1,
@@ -32,24 +33,8 @@ const menuVariant = {
 	exit: {
 		y: '100%',
 		transition: {
-			delay: 0.5,
-			duration: 0.5,
-		},
-	},
-};
-
-const navDivVariants = {
-	hidden: { y: '-100%' },
-	show: {
-		y: 0,
-		transition: {
+			delay: 0.7,
 			duration: 0.7,
-		},
-	},
-	exit: {
-		y: '-100%',
-		transition: {
-			duration: 0.5,
 		},
 	},
 };
@@ -115,7 +100,7 @@ export function MenuButton() {
 
 	return (
 		<>
-			<AnimatePresence initial={false} key='presence'>
+			<AnimatePresence key='presence' exitBeforeEnter>
 				{open ? (
 					<motion.div
 						variants={menuVariant}
@@ -129,17 +114,8 @@ export function MenuButton() {
 							height: height,
 						}}
 						key='box'
-						className='absolute z-19 overflow-hidden backdrop-blur-md'
+						className='absolute z-10 overflow-hidden backdrop-blur-md'
 					>
-						<motion.div
-							variants={navDivVariants}
-							initial='hidden'
-							animate='show'
-							exit='exit'
-							key='header'
-						>
-							<Nav className='z-20' key='nav' />
-						</motion.div>
 						<motion.div key='links'>
 							{navigationLinks.map((section, index) => {
 								return (
@@ -169,9 +145,14 @@ export function MenuButton() {
 													return (
 														<motion.li variants={itemsVariants} key={link}>
 															{link === 'Home' ? (
-																<Link href={'/'}>{link}</Link>
+																<Link href={'/'} onClick={toggleOpen}>
+																	{link}
+																</Link>
 															) : (
-																<Link href={`/${link.toLowerCase()}`}>
+																<Link
+																	href={`/${link.toLowerCase()}`}
+																	onClick={toggleOpen}
+																>
 																	{link}
 																</Link>
 															)}

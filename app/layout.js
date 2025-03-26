@@ -1,5 +1,5 @@
 import { Geist, Geist_Mono } from 'next/font/google';
-import { ThemeProvider } from '@/components/ui/ThemeProvider';
+import Template from '@/app/Template';
 import Nav from '@/components/Nav';
 import Waves from '@/components/Waves';
 import './globals.css';
@@ -23,14 +23,12 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang='en' suppressHydrationWarning>
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased rounded-full bg-radial-[at_50%_90%] from-sky via-sky-100 to-sky-200 to-100% overflow-y-hidden`}
+				className={`${geistSans.variable} ${geistMono.variable} antialiased rounded-full bg-radial-[at_50%_100%] from-sky via-sky-100 to-sky-200 to-100% overflow-y-hidden`}
 				suppressHydrationWarning
 			>
-				<ThemeProvider attribute='class' defaultTheme='system' enableSystem>
-					<Nav />
-					{children}
-					<Waves />
-				</ThemeProvider>
+				<Nav />
+				<Template>{children}</Template>
+				<Waves />
 			</body>
 		</html>
 	);

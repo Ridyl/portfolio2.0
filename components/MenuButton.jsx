@@ -6,17 +6,16 @@ import { AnimatePresence, motion } from 'motion/react';
 
 import Link from 'next/link';
 import useWindowSize from './hooks/useWindowSize';
-import Nav from './Nav';
 
 const navigationLinks = [
 	{
 		section: 'Sitemap',
 		links: ['Home', 'About', 'Projects', 'Services', 'Contact'],
 	},
-	{
-		section: 'Connect',
-		links: ['Resume', 'LinkedIn', 'Email'],
-	},
+	// {
+	// 	section: 'Connect',
+	// 	links: ['Resume', 'LinkedIn', 'Email'],
+	// },
 ];
 
 const menuVariant = {
@@ -32,9 +31,10 @@ const menuVariant = {
 	},
 	exit: {
 		x: '100%',
+		opacity: 0,
 		transition: {
 			delay: 0.7,
-			duration: 0.2,
+			duration: 0.3,
 		},
 	},
 };
@@ -159,6 +159,51 @@ export function MenuButton() {
 														</motion.li>
 													);
 												})}
+											</motion.ul>
+											<motion.div
+												variants={containerTitleVariants}
+												initial='hidden'
+												animate='show'
+												exit='exit'
+												className='border-b-1 pb-2 border-secondary mb-3 text-end'
+												key={index + 2}
+											>
+												<h1 className='text-2xl text-secondary mb-2 mt-5'>
+													Connect
+												</h1>
+											</motion.div>
+											<motion.ul
+												variants={listVariants}
+												initial='hidden'
+												animate='show'
+												exit='exit'
+												className='flex flex-col gap-5 text-3xl font-semibold w-[100%] text-end'
+												key={index + 1}
+											>
+												<motion.li variants={itemsVariants} key={'resumeList'}>
+													<a
+														download='@/components/downloads/Resume_JosephDalatr.pdf'
+														onClick={toggleOpen}
+														key={'resumeItem'}
+													>
+														Resume
+													</a>
+												</motion.li>
+												<motion.li variants={itemsVariants} key={'linkedList'}>
+													<a
+														href='https://www.linkedin.com/in/joeydalatri/'
+														target='_blank'
+														onClick={toggleOpen}
+														key={'linkedItem'}
+													>
+														LinkedIn
+													</a>
+												</motion.li>
+												<motion.li variants={itemsVariants} key={'emailList'}>
+													<a href='' onClick={toggleOpen} key={'emailItem'}>
+														Email
+													</a>
+												</motion.li>
 											</motion.ul>
 										</div>
 									</div>

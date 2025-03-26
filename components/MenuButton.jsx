@@ -201,7 +201,7 @@ export function MenuButton() {
 												</motion.li>
 												<motion.li variants={itemsVariants} key={'emailList'}>
 													<Link
-														href='/email'
+														href={'/contact'}
 														onClick={toggleOpen}
 														key={'emailItem'}
 													>

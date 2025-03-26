@@ -1,9 +1,10 @@
 'use client';
 import { motion, AnimatePresence } from 'framer-motion';
 import { usePathname } from 'next/navigation';
-import { useState, useEffect, useContext, useRef } from 'react';
+import { useContext, useRef } from 'react';
 import { LayoutRouterContext } from 'next/dist/shared/lib/app-router-context.shared-runtime';
 import useWindowSize from '@/components/hooks/useWindowSize';
+import Nav from '@/components/Nav';
 import Cloud1 from '@/components/svg/clouds/LeftFront';
 import Cloud2 from '@/components/svg/clouds/LeftBack';
 import Cloud3 from '@/components/svg/clouds/RightFront';
@@ -52,6 +53,7 @@ export default function Template({ children }) {
 			className='relative overflow-hidden'
 			style={{ height: height, width: width }}
 		>
+			<Nav />
 			<AnimatePresence mode='popLayout'>
 				<motion.div key={pathname} className='relative z-10'>
 					<MotionCloud1

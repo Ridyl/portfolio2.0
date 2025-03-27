@@ -22,8 +22,8 @@ export default function Services() {
 					<span className='text-primary font-bold'>look great</span> but also{' '}
 					<span className='text-primary font-bold'>perform reliably</span> under
 					the hood. Whether it's a dynamic single-page app, a custom dashboard,
-					or a full-featured web platform, I’m here to turn your vision into a
-					fully functional digital solution.
+					or a full-featured web platform, I&apos;m here to turn your vision
+					into a fully functional digital solution.
 				</p>
 			</div>
 			<div className='flex justify-end'>

@@ -1,6 +1,4 @@
 import { Geist, Geist_Mono } from 'next/font/google';
-// import Template from '@/app/Template';
-import Nav from '@/components/Nav';
 import Waves from '@/components/Waves';
 import Providers from './providers';
 import './globals.css';
@@ -27,7 +25,6 @@ export default function RootLayout({ children }) {
 				className={`${geistSans.variable} ${geistMono.variable} antialiased rounded-full bg-radial-[at_50%_100%] from-sky via-sky-100 to-sky-200 to-100% overflow-y-hidden`}
 				suppressHydrationWarning
 			>
-				<Nav />
 				<Providers>{children}</Providers>
 				<Waves />
 			</body>

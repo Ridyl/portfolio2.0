@@ -9,7 +9,7 @@ import Cloud1 from '@/components/svg/clouds/LeftFront';
 import Cloud2 from '@/components/svg/clouds/LeftBack';
 import Cloud3 from '@/components/svg/clouds/RightFront';
 import Cloud4 from '@/components/svg/clouds/RightBack';
-
+import Providers from './providers';
 const MotionCloud1 = motion(Cloud1);
 const MotionCloud2 = motion(Cloud2);
 const MotionCloud3 = motion(Cloud3);
@@ -54,51 +54,42 @@ export default function Template({ children }) {
 			style={{ height: height, width: width }}
 		>
 			<Nav />
-			<AnimatePresence mode='popLayout'>
-				<motion.div key={pathname} className='relative z-10'>
-					<MotionCloud1
-						key='cloud1'
-						className='absolute top-0 left-0 w-full h-auto z-50 opacity-90 pointer-events-none'
-						{...cloudAnim(0.3)}
-					/>
-					<MotionCloud2
-						key='cloud2'
-						className='absolute top-10 left-0 w-full h-auto z-50 opacity-90 pointer-events-none'
-						{...cloudAnim(0.5)}
-					/>
-					<MotionCloud3
-						key='cloud3'
-						className='absolute bottom-10 left-0 w-full h-auto z-50 opacity-90 pointer-events-none'
-						{...cloudAnim(0.7)}
-					/>
-					<MotionCloud4
-						key='cloud4'
-						className='absolute bottom-0 left-0 w-full h-auto z-50 opacity-90 pointer-events-none'
-						{...cloudAnim(0.9)}
-					/>
-					<motion.div
-						initial='hidden'
-						animate='enter'
-						exit='exit'
-						variants={variants}
-						transition={{ ease: 'linear', duration: 1 }}
-						className='relative z-10'
-					>
-						<FrozenRouter>
-							<motion.div
-								initial='hidden'
-								animate='enter'
-								exit='exit'
-								variants={variants}
-								transition={{ ease: 'linear', duration: 1, delay: 1.7 }}
-								className='relative z-10'
-							>
-								{children}
-							</motion.div>
-						</FrozenRouter>
+			<Providers>
+				<AnimatePresence mode='popLayout'>
+					<motion.div key={pathname} className='relative z-10'>
+						<MotionCloud1
+							key='cloud1'
+							className='absolute top-0 left-0 w-full h-auto z-50 opacity-90 pointer-events-none'
+							{...cloudAnim(0)}
+						/>
+						<MotionCloud2
+							key='cloud2'
+							className='absolute top-10 left-0 w-full h-auto z-50 opacity-90 pointer-events-none'
+							{...cloudAnim(0.2)}
+						/>
+						<MotionCloud3
+							key='cloud3'
+							className='absolute bottom-10 left-0 w-full h-auto z-50 opacity-90 pointer-events-none'
+							{...cloudAnim(0.4)}
+						/>
+						<MotionCloud4
+							key='cloud4'
+							className='absolute bottom-0 left-0 w-full h-auto z-50 opacity-90 pointer-events-none'
+							{...cloudAnim(0.6)}
+						/>
+						<motion.div
+							initial='hidden'
+							animate='enter'
+							exit='exit'
+							variants={variants}
+							transition={{ ease: 'linear', duration: 1 }}
+							className='relative z-10'
+						>
+							{children}
+						</motion.div>
 					</motion.div>
-				</motion.div>
-			</AnimatePresence>
+				</AnimatePresence>
+			</Providers>
 		</div>
 	);
 }

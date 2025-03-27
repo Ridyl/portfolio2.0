@@ -12,10 +12,6 @@ const navigationLinks = [
 		section: 'Sitemap',
 		links: ['Home', 'About', 'Projects', 'Services', 'Contact'],
 	},
-	// {
-	// 	section: 'Connect',
-	// 	links: ['Resume', 'LinkedIn', 'Email'],
-	// },
 ];
 
 const menuVariant = {
@@ -182,7 +178,9 @@ export function MenuButton() {
 											>
 												<motion.li variants={itemsVariants} key={'resumeList'}>
 													<a
-														download='@/components/downloads/Resume_JosephDalatr.pdf'
+														href='https://docs.google.com/document/d/1SsZI9msOR0ALeJ790sT7mvVDAyBQwJXu/export?format=pdf'
+														target='_blank'
+														download='JosephDalatriResume.pdf'
 														onClick={toggleOpen}
 														key={'resumeItem'}
 													>
@@ -191,7 +189,7 @@ export function MenuButton() {
 												</motion.li>
 												<motion.li variants={itemsVariants} key={'linkedList'}>
 													<a
-														href='https://www.linkedin.com/in/joeydalatri/'
+														href='https://www.linkedin.com/in/joeydalatri'
 														target='_blank'
 														onClick={toggleOpen}
 														key={'linkedItem'}

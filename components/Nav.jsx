@@ -21,7 +21,20 @@ export default function Nav() {
 			</div>
 			<div className='p-3 text-sm text-wrap w-45 hidden lg:block'>
 				<p className='font-light text-xs text-secondary mb-1'>Connect</p>
-				<p>Resume, LinkedIn, Email</p>
+				<a
+					href='https://docs.google.com/document/d/1SsZI9msOR0ALeJ790sT7mvVDAyBQwJXu/export?format=pdf'
+					target='_blank'
+				>
+					Resume,{' '}
+				</a>
+				<a
+					href='https://www.linkedin.com/in/joeydalatri'
+					target='_blank'
+					key={'linkedItem'}
+				>
+					LinkedIn,{' '}
+				</a>
+				<Link href={'/contact'}>Email</Link>
 			</div>
 		</div>
 	);

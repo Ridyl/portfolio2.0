@@ -26,7 +26,9 @@ export default function Services() {
 					fully functional digital solution.
 				</p>
 			</div>
-			<MenuButton />
+			<div className='flex justify-end'>
+				<MenuButton />
+			</div>
 		</div>
 	);
 }

@@ -14,14 +14,14 @@ export default function Providers({ children }) {
 				animate(
 					wrapperRef.current,
 					{ opacity: [1, 0] },
-					{ duration: 0.5, onComplete: next }
+					{ duration: 0.3, onComplete: next }
 				);
 			}}
 			enter={(next) => {
 				animate(
 					wrapperRef.current,
 					{ opacity: [0, 1] },
-					{ duration: 0.5, onComplete: next }
+					{ duration: 0.3, onComplete: next }
 				);
 			}}
 		>

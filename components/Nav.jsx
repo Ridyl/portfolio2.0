@@ -38,16 +38,18 @@ export default function Nav() {
 					href='https://docs.google.com/document/d/1SsZI9msOR0ALeJ790sT7mvVDAyBQwJXu/export?format=pdf'
 					target='_blank'
 				>
-					Resume{' '}
+					<span className='no-underline hover:underline'>Resume</span>,{' '}
 				</a>
 				<a
 					href='https://www.linkedin.com/in/joeydalatri'
 					target='_blank'
 					key={'linkedItem'}
 				>
-					LinkedIn{' '}
+					<span className='no-underline hover:underline'>LinkedIn</span>,{' '}
 				</a>
-				<Link href={'/contact'}>Email</Link>
+				<Link href={'/contact'}>
+					<span className='no-underline hover:underline'>Email</span>
+				</Link>
 			</div>
 		</div>
 	);

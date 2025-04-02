@@ -1,9 +1,6 @@
-import { MenuButton } from '@/components/MenuButton';
-import PageWrapper from '@/components/PageWrapper';
-
 export default function About() {
 	return (
-		<div className='flex flex-col justify-between p-4 h-[90dvh] lg:w-[50%] lg:ml-auto lg:mr-auto'>
+		<div className='flex flex-col justify-between p-4 h-[80dvh] lg:w-[50%] lg:ml-auto lg:mr-auto'>
 			<div className='flex flex-col mt-auto mb-auto text-end lg:text-center'>
 				<h1 className='text-primary text-5xl font-semibold drop-shadow-md'>
 					About Me!
@@ -20,9 +17,7 @@ export default function About() {
 					<span className='text-primary font-bold'>solutions that matter</span>.
 				</p>
 			</div>
-			<div className='flex justify-end'>
-				<MenuButton />
-			</div>
+			<div className='flex justify-end'></div>
 		</div>
 	);
 }

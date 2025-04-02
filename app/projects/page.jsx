@@ -1,8 +1,6 @@
-import { MenuButton } from '@/components/MenuButton';
 import { Badge } from '@/components/ui/badge';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Separator } from '@/components/ui/separator';
-import PageWrapper from '@/components/PageWrapper';
 
 const projects = [
 	{
@@ -37,8 +35,8 @@ const projects = [
 
 export default function Projects() {
 	return (
-		<div className='flex flex-col justify-between p-4 h-[90dvh]'>
-			<div className='flex flex-col justify-center h-full lg:mt-auto lg:mb-auto'>
+		<div className='flex flex-col justify-between p-4'>
+			<div className='flex flex-col justify-center lg:mt-auto lg:mb-auto h-[80dvh]'>
 				<h1 className='text-primary text-5xl font-semibold drop-shadow-md text-end lg:text-center'>
 					Projects
 				</h1>
@@ -72,7 +70,6 @@ export default function Projects() {
 					</ScrollArea>
 				</div>
 			</div>
-			<MenuButton />
 		</div>
 	);
 }

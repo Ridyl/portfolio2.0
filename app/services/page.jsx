@@ -1,8 +1,6 @@
-import { MenuButton } from '@/components/MenuButton';
-import PageWrapper from '@/components/PageWrapper';
 export default function Services() {
 	return (
-		<div className='flex flex-col justify-between p-4 h-[90dvh] lg:w-[50%] lg:ml-auto lg:mr-auto'>
+		<div className='flex flex-col justify-between p-4 h-[80dvh] lg:w-[50%] lg:ml-auto lg:mr-auto'>
 			<div className='flex flex-col mt-auto mb-auto text-end lg:text-center'>
 				<h1 className='text-primary text-5xl font-semibold drop-shadow-md text-end lg:text-center'>
 					Services
@@ -26,9 +24,7 @@ export default function Services() {
 					into a fully functional digital solution.
 				</p>
 			</div>
-			<div className='flex justify-end'>
-				<MenuButton />
-			</div>
+			<div className='flex justify-end'></div>
 		</div>
 	);
 }

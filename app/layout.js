@@ -3,6 +3,7 @@ import Waves from '@/components/Waves';
 
 import './globals.css';
 import Nav from '@/components/Nav';
+import { MenuButton } from '@/components/MenuButton';
 
 const geistSans = Geist({
 	variable: '--font-geist-sans',
@@ -28,6 +29,9 @@ export default function RootLayout({ children }) {
 			>
 				<Nav />
 				{children}
+
+				<MenuButton className='absolute right-0 bottom-0 lg:invisible' />
+
 				<Waves />
 			</body>
 		</html>

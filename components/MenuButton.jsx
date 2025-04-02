@@ -216,7 +216,7 @@ export function MenuButton() {
 			</AnimatePresence>
 			<Button
 				variant='default'
-				className='mt-auto w-20 ml-auto z-20 shadow-md block mr-3 mb-3'
+				className='mt-auto w-20 ml-auto z-20 shadow-md block mr-3 mb-3 absolute right-0 bottom-0'
 				onClick={toggleOpen}
 				key='button'
 			>

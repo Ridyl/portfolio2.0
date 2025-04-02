@@ -36,7 +36,7 @@ const projects = [
 export default function Projects() {
 	return (
 		<div className='flex flex-col justify-between p-4'>
-			<div className='flex flex-col justify-center lg:mt-auto lg:mb-auto h-[80dvh]'>
+			<div className='flex flex-col justify-center lg:mt-auto lg:mb-auto h-[90dvh]'>
 				<h1 className='text-primary text-5xl font-semibold drop-shadow-md text-end lg:text-center'>
 					Projects
 				</h1>

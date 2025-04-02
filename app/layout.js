@@ -24,12 +24,12 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang='en' suppressHydrationWarning>
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased rounded-full bg-radial-[at_50%_100%] from-sky via-sky-100 to-sky-200 to-100% overflow-y-hidden`}
+				className={`${geistSans.variable} ${geistMono.variable} antialiased rounded-full bg-radial-[at_50%_100%] from-sky via-sky-100 to-sky-200 to-100% overflow-y-hidden h-[100dvh]`}
 				suppressHydrationWarning
 			>
 				<Nav />
 				{children}
-				<MenuButton className='absolute right-0 bottom-0 lg:invisible' />
+				<MenuButton />
 				<Waves />
 			</body>
 		</html>

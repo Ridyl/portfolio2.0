@@ -2,6 +2,7 @@ import { MenuButton } from '@/components/MenuButton';
 import { Badge } from '@/components/ui/badge';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Separator } from '@/components/ui/separator';
+import PageWrapper from '@/components/PageWrapper';
 
 const projects = [
 	{

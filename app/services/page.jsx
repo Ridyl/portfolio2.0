@@ -1,5 +1,5 @@
 import { MenuButton } from '@/components/MenuButton';
-
+import PageWrapper from '@/components/PageWrapper';
 export default function Services() {
 	return (
 		<div className='flex flex-col justify-between p-4 h-[90dvh] lg:w-[50%] lg:ml-auto lg:mr-auto'>

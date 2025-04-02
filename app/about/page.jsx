@@ -1,4 +1,5 @@
 import { MenuButton } from '@/components/MenuButton';
+import PageWrapper from '@/components/PageWrapper';
 
 export default function About() {
 	return (

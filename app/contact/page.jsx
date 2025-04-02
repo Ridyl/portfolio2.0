@@ -1,5 +1,6 @@
 import { MenuButton } from '@/components/MenuButton';
 import { ContactForm } from '@/components/ContactForm';
+import PageWrapper from '@/components/PageWrapper';
 
 export default function Contact() {
 	return (

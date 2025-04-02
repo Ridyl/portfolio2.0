@@ -1,6 +1,26 @@
+'use client';
 import Link from 'next/link';
 
 export default function Nav() {
+	const links = [
+		{
+			label: 'Home',
+			url: '/',
+		},
+		{
+			label: 'Projects',
+			url: '/projects',
+		},
+		{
+			label: 'Services',
+			url: '/services',
+		},
+		{
+			label: 'Contact',
+			url: '/contact',
+		},
+	];
+
 	return (
 		<div className='flex justify-around shadow-xl shadow-sky-200 bg-sky-200 backdrop-blur-2xl backdrop-opacity-80'>
 			<div className='p-3 text-sm'>
@@ -14,10 +34,13 @@ export default function Nav() {
 			</div>
 			<div className='p-3 text-sm text-wrap w-45 hidden lg:block'>
 				<p className='font-light text-xs text-secondary mb-1'>Site Map</p>
-				<Link href={'/'}>Home</Link>, <Link href={'/about'}>About</Link>,{' '}
-				<Link href={'/projects'}>Projects</Link>,{' '}
-				<Link href={'/services'}>Services</Link>,{' '}
-				<Link href={'/contact'}>Contact</Link>
+				{links.map((route) => {
+					return (
+						<>
+							<Link href={route.url}>{route.label} </Link>
+						</>
+					);
+				})}
 			</div>
 			<div className='p-3 text-sm text-wrap w-45 hidden lg:block'>
 				<p className='font-light text-xs text-secondary mb-1'>Connect</p>
@@ -25,14 +48,14 @@ export default function Nav() {
 					href='https://docs.google.com/document/d/1SsZI9msOR0ALeJ790sT7mvVDAyBQwJXu/export?format=pdf'
 					target='_blank'
 				>
-					Resume,{' '}
+					Resume{' '}
 				</a>
 				<a
 					href='https://www.linkedin.com/in/joeydalatri'
 					target='_blank'
 					key={'linkedItem'}
 				>
-					LinkedIn,{' '}
+					LinkedIn{' '}
 				</a>
 				<Link href={'/contact'}>Email</Link>
 			</div>

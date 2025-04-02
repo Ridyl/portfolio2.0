@@ -18,6 +18,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
 	title: "Joey D'Alatri",
 	description: "Created by Joey D'Alatri",
+	icon: '/favicon.ico',
 };
 
 export default function RootLayout({ children }) {

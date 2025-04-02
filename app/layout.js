@@ -29,9 +29,7 @@ export default function RootLayout({ children }) {
 			>
 				<Nav />
 				{children}
-
 				<MenuButton className='absolute right-0 bottom-0 lg:invisible' />
-
 				<Waves />
 			</body>
 		</html>

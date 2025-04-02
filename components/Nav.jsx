@@ -1,6 +1,5 @@
 'use client';
 import Link from 'next/link';
-import { MenuButton } from './MenuButton';
 
 export default function Nav() {
 	const links = [
@@ -33,16 +32,6 @@ export default function Nav() {
 				<p className='font-light text-xs text-secondary mb-1'>Status</p>
 				<p>Available for freelance or permanent positions</p>
 			</div>
-			{/* <div className='p-3 text-sm text-wrap w-45 hidden lg:block'>
-				<p className='font-light text-xs text-secondary mb-1'>Site Map</p>
-				{links.map((route) => {
-					return (
-						<>
-							<Link href={route.url}>{route.label} </Link>
-						</>
-					);
-				})}
-			</div> */}
 			<div className='p-3 text-sm text-wrap w-45 hidden lg:block'>
 				<p className='font-light text-xs text-secondary mb-1'>Connect</p>
 				<a

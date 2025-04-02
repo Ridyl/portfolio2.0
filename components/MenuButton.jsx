@@ -3,7 +3,6 @@
 import { Button } from '@/components/ui/button';
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'motion/react';
-
 import Link from 'next/link';
 import useWindowSize from './hooks/useWindowSize';
 

@@ -44,8 +44,8 @@ export function ContactForm() {
 		const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
 		const userID = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
-		emailjs.send(serviceID, templateID, values).then(
-			(response) => {
+		emailjs.send(serviceID, templateID, values, userID).then(
+			() => {
 				toast('Message sent successfully!');
 			},
 			(error) => {

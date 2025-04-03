@@ -114,16 +114,19 @@ export function MenuButton() {
 						<motion.div key='links'>
 							{navigationLinks.map((section, index) => {
 								return (
-									<div key={section + index} className='p-3 mt-8'>
+									<div key={index} className='p-3 mt-8'>
 										<motion.div
 											variants={containerTitleVariants}
 											initial='hidden'
 											animate='show'
 											exit='exit'
 											className='border-b-1 pb-2 border-secondary mb-3 text-end'
-											key={index + 2}
+											key={index + 10}
 										>
-											<h1 key={index} className='text-2xl text-secondary mb-2'>
+											<h1
+												key={index + 20}
+												className='text-2xl text-secondary mb-2'
+											>
 												{section.section}
 											</h1>
 										</motion.div>
@@ -134,7 +137,7 @@ export function MenuButton() {
 												animate='show'
 												exit='exit'
 												className='flex flex-col gap-5 text-3xl font-semibold w-[100%] text-end'
-												key={index + 1}
+												key={index + 30}
 											>
 												{section.links.map((link) => {
 													return (

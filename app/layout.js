@@ -1,8 +1,7 @@
 import { Geist, Geist_Mono } from 'next/font/google';
-import Waves from '@/components/Waves';
-
 import './globals.css';
 import Nav from '@/components/Nav';
+import Waves from '@/components/Waves';
 import { MenuButton } from '@/components/MenuButton';
 
 const geistSans = Geist({

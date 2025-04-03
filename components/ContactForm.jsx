@@ -1,8 +1,9 @@
 'use client';
-
+import emailjs from '@emailjs/browser';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { toast } from 'sonner';
 
 import {
 	Form,
@@ -38,9 +39,19 @@ export function ContactForm() {
 		},
 	});
 
-	//finish back end work
 	const onSubmit = (values) => {
-		console.log('Contact form submitted:', values);
+		const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+		const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+		const userID = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+
+		emailjs.send(serviceID, templateID, values, userID).then(
+			() => {
+				toast('Message sent successfully!');
+			},
+			(error) => {
+				toast('Failed to send message. Please try again later.');
+			}
+		);
 	};
 
 	return (
